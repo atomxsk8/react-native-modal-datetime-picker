@@ -46,6 +46,7 @@ const DateTimePickerModal = memo(
           nextDate = new Date(year, month, day, hours, minutes);
         }
       }
+      onCancel();
       onConfirm(nextDate);
       onHide(true, nextDate);
     };
